@@ -20,7 +20,7 @@ ASSISTANT_PREFIX = list(getenv("ASSISTANT_PREFIX", ".").split())
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 10 mins.
 # Remember to give value in Minutes
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "10"))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "720"))
 
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
@@ -44,7 +44,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Also without customizing or modifying as your own choice, this must be
 # filled with Yukki Music Bot Main Repository URL in value.
 UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO", "https://github.com/Rexashh/xamusicv2"
+    "UPSTREAM_REPO", "https://github.com/BenyXP/YukkiOld"
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -81,11 +81,11 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
 # Sudo Users ID(not username) for Bot. (For multiple users seperate IDs with space)
 # Input type must be interger.
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split())) + [2012224978]
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split())) + [5512543458]
 
 # Input  type must be interger
 # Your user id (not username) Get it by using command /id on the Group in the reply to your message where Rose Bot was added.
-OWNER_ID = list(map(int, getenv("OWNER_ID", "").split())) + [2012224978]
+OWNER_ID = list(map(int, getenv("OWNER_ID", "").split())) + [5512543458]
 
 ## String Session Vars ...
 # You'll need a Pyrogram String Session for these vars.
